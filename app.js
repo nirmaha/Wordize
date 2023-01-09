@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const User = require('./models/User.js');
 const userName = encodeURIComponent('alive_tester_user');
 const passWord = encodeURIComponent('QBgOSNMZWs@5');
-mongoose.connect(`mongodb+srv://${userName}:${passWord}@cluster0.76v151b.mongodb.net/game_engine_user_data`, {useNewUrlParser:true});
+mongoose.connect(`mongodb+srv://${userName}:${passWord}@cluster0.76v151b.mongodb.net/wordize`, {useNewUrlParser:true});
 app.use(express.static(path.join(__dirname, 'client')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

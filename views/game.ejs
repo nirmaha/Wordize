@@ -4,10 +4,32 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/game/game.css" type="text/css">
         <title>Wordize</title>
     </head>
     <body>
-        <input type="text" style="width: 60px;height: 75px;font-size: 60px;" maxlength="1">
+        <div id="container">
+            <form action="/checker" method="POST">
+                <% for (let i = 0; i < randomAmountOfWordSpace; i++) { %>
+                    <input type="text" style="width: 60px;height: 75px;font-size: 60px;" maxlength="1" name="letter<%= i %>" required>
+                <% } %>
+                <br>
+                <br>
+                <button type="submit" id="check">Check Word</button>
+                <br>
+                <br>
+                <% for (let i = 0; i < selectedLetters.length; i++) { %>
+                    <input type="text" style="width: 60px;height: 75px;font-size: 60px;" maxlength="1" value="<%= selectedLetters[i] %>" readonly>
+                <% } %>
+                <br>
+            </form>
+            <br>
+            <form action="/scoring" method="POST">
+                <h1 id="point" name="points">Points: <%= wordCount %></h1>
+                <button type="submit" id="score">Submit</button>
+            </form>
+            <br>
+        </div>
         <script src="/game/game.js" type="module"></script>
     </body>
 </html>

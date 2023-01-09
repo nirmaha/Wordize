@@ -4,10 +4,32 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/home/style.css" type="text/css">
         <title>Wordize</title>
     </head>
     <body>
-        <button type="button" id="start">Start</button>
+        <div id="container">
+            <h1>Wordize</h1>
+            <button type="button" id="start">Start</button>
+            <br>
+            <br>
+            <button type="button" id="quit">Quit</button>
+            <br>
+            <br>
+            <form action="/setup" method="POST">
+                <input type="text" name="user" placeholder="Name">
+                <br>
+                <br>
+                <button type="submit" id="userbtn">Submit</button>
+            </form>
+            <h1>Instructions</h1>
+            <p>
+                To register yourself to the leaderboard you need to type in your name to the text field and hit enter.
+                To play the game you must use the characters listed at the bottom and type them out letter for letter in the word spaces in game.
+                After that you must hit the check button to check if the word will count as a point and if it does you get a point.
+                Whenever you feel you have collected enough points you can submit your results by using the submit button.
+            </p>
+        </div>
         <script src="/home/script.js" type="module"></script>
     </body>
 </html>

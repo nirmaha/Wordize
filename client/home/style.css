@@ -1,0 +1,43 @@
+body {
+    background-color: chocolate;
+}
+
+#container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#start {
+    background-color: rgb(0, 255, 0);
+    color: white;
+    width: 120px;
+    height: 30px;
+}
+
+#quit {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    width: 120px;
+    height: 30px
+}
+
+#userbtn {
+    background-color: grey;
+    color: white;
+    width: 120px;
+    height: 30px
+}
+
+#start:hover {
+    background-color: rgb(3, 113, 3);
+}
+
+#quit:hover {
+    background-color: #8e0606;
+}
+
+#userbtn:hover {
+    background-color: rgb(63, 63, 63);
+}

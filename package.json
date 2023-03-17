@@ -11,7 +11,7 @@
   "name": "wordize",
   "version": "1.0.0",
   "description": "A word game for competition",
-  "main": "app.js",
+  "main": "application.js",
   "scripts": {
     "start": "nodemon ."
   },

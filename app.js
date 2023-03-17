@@ -20,7 +20,7 @@ let selectedLetters = [];
 let wordCount = 0;
 let user;
 
-app.listen(3000);
+app.listen(3001);
 
 /* Routing the pages to the server. */
 app.get('/', (req, res) => {

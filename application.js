@@ -23,7 +23,7 @@ let user;
 app.listen(3001);
 
 /* Routing the pages to the server. */
-app.get('/', (req, res) => {
+app.get('/Wordize', (req, res) => {
     wordCount = 0;
     res.render('index');
 });
